@@ -62,7 +62,7 @@ export const AdminView = () => {
     }
   }, [store, storeAddress, wallet.publicKey]);
   console.log('@admin', wallet.connected, storeAddress, isLoading, store);
-
+ 
   return (
     <>
       {!wallet.connected ? (

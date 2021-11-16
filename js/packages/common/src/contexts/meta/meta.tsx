@@ -234,7 +234,7 @@ export function MetaProvider({ children = null as any }) {
         setState(nextState);
       }
     } else {
-      console.log('------->No pagination detected');
+      console.log('------->No pagination detected'); 
       nextState = !USE_SPEED_RUN
         ? await loadAccounts(connection)
         : await limitedLoadAccounts(connection);

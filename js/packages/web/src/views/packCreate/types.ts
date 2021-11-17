@@ -2,7 +2,7 @@ export enum CreatePackSteps {
   SelectItems,
   SelectVoucher,
   AdjustQuantities,
-  SalesSettings,
+  // SalesSettings,
   DesignAndInfo,
   ReviewAndMint,
 }

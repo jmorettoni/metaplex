@@ -50,7 +50,7 @@ const MetaplexMenu = () => {
     return (
       <>
         <Modal
-          title={<img src={'/metaplex-logo.svg'} />}
+          title={<img src={'/custom_layout/banner-top.jpeg'} />}
           visible={isModalVisible}
           footer={null}
           className={'modal-box'}
@@ -107,9 +107,10 @@ const MetaplexMenu = () => {
 };
 
 export const LogoLink = () => {
+  let { ASSET_PREFIX } = process.env;
   return (
     <Link to={`/`}>
-      <img src={'/metaplex-logo.svg'} />
+      <img width="200" src={ASSET_PREFIX + '/custom_layout/logo-white.png'} /> 
     </Link>
   );
 };

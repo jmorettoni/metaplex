@@ -38,8 +38,8 @@ export const SalesListView = () => {
     <>
       <Banner
         src={ASSET_PREFIX + '/custom_layout/banner-top.jpeg'}
-        headingText="Empowered Creators. Original Productions."  
-        subHeadingText="Creator is a NFT protocol and marketplace tool for independent music, video and creative industry.Sell and collect exclusive NFTS of your favorite creators and earn money with the projects that you support."
+         headingText="Empowered Creators. Original Productions."  
+        subHeadingText="Creator is a NFT protocol and marketplace tool for independent music, video and creative industry. Sell and collect exclusive NFTS of your favorite creators and earn money with the projects that you support."
         actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}
         useBannerBg 
       />

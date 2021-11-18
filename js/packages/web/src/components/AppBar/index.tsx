@@ -108,9 +108,10 @@ const MetaplexMenu = () => {
 
 export const LogoLink = () => {
   let { ASSET_PREFIX } = process.env;
+  if(ASSET_PREFIX==undefined){ASSET_PREFIX = "";};
   return (
     <Link to={`/`}>
-      <img width="200" src={ASSET_PREFIX + '/custom_layout/logo-white.png'} /> 
+      <img width="200" src={ASSET_PREFIX + '/custom_layout/logo-white.png'} />  
     </Link>
   );
 };

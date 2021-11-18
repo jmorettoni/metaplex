@@ -34,12 +34,13 @@ export const SalesListView = () => {
   const { connected } = useWallet();
   const { sales, hasResaleAuctions } = useSales(activeKey);
   let { ASSET_PREFIX } = process.env;
+  if(ASSET_PREFIX==undefined){ASSET_PREFIX = "";};
   return (
     <>
       <Banner
         src={ASSET_PREFIX + '/custom_layout/banner-top.jpeg'}
-        headingText="Power for Creators. Support for productions.  The next Crowdfunding level."  
-        subHeadingText="Creator is a NFT protocol to empower the independent music, video and creative industry. Collect exclusive NFTS of your favorite creators and earn money with the projects that you support."
+        headingText="Empowered Creators. Original Productions."  
+        subHeadingText="Creator is a NFT protocol and marketplace tool for independent music, video and creative industry.Sell and collect exclusive NFTS of your favorite creators and earn money with the projects that you support."
         actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}
         useBannerBg 
       />

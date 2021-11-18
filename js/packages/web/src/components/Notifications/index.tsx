@@ -564,9 +564,11 @@ export function Notifications() {
     <span>No notifications</span>
   );
 
-  const justContent = (
+  let ASSET_PREFIX = process.env.ASSET_PREFIX || '';
+
+  const justContent = ( 
     <Popover placement="bottomLeft" content={content} trigger="click">
-      <img src={'/bell.svg'} style={{ cursor: 'pointer' }} />
+      <img src={ASSET_PREFIX+'/bell.svg'} style={{ cursor: 'pointer' }} />
     </Popover>
   );
 

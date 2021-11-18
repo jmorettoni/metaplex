@@ -45,19 +45,19 @@ const MetaplexMenu = () => {
   const { width } = useWindowDimensions();
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   const { connected } = useWallet();
-
+  let ASSET_PREFIX = process.env.ASSET_PREFIX || '';
   if (width < 768)
     return (
       <>
         <Modal
-          title={<img src={'/custom_layout/banner-top.jpeg'} />}
+          title={<img src={ASSET_PREFIX+'/custom_layout/banner-top.jpeg'} />}
           visible={isModalVisible}
           footer={null}
           className={'modal-box'}
           closeIcon={
             <img
               onClick={() => setIsModalVisible(false)}
-              src={'/modals/close.svg'}
+              src={ASSET_PREFIX+'/modals/close.svg'}
             />
           }
         >
@@ -107,8 +107,7 @@ const MetaplexMenu = () => {
 };
 
 export const LogoLink = () => {
-  let { ASSET_PREFIX } = process.env;
-  if(ASSET_PREFIX==undefined){ASSET_PREFIX = "";};
+  let ASSET_PREFIX = process.env.ASSET_PREFIX || '';
   return (
     <Link to={`/`}>
       <img width="200" src={ASSET_PREFIX + '/custom_layout/logo-white.png'} />  

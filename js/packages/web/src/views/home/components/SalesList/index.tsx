@@ -33,8 +33,7 @@ export const SalesListView = () => {
   const { isLoading } = useMeta();
   const { connected } = useWallet();
   const { sales, hasResaleAuctions } = useSales(activeKey);
-  let { ASSET_PREFIX } = process.env;
-  if(ASSET_PREFIX==undefined){ASSET_PREFIX = "";};
+  let ASSET_PREFIX = process.env.ASSET_PREFIX || '';  
   return (
     <>
       <Banner

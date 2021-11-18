@@ -346,6 +346,10 @@ export const Cog = () => {
   const { setVisible } = useWalletModal();
   const open = useCallback(() => setVisible(true), [setVisible]);
 
+
+  let ASSET_PREFIX = process.env.ASSET_PREFIX || '';
+
+
   return (
     <div className="wallet-wrapper">
       <Popover
@@ -414,7 +418,7 @@ export const Cog = () => {
         }
       >
         <Button className="wallet-key">
-          <img src="/cog.svg" />
+          <img src={ASSET_PREFIX+"/cog.svg"}  />
         </Button>
       </Popover>
     </div>

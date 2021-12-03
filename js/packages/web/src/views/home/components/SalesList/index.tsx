@@ -43,6 +43,11 @@ export const SalesListView = () => {
         actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}
         useBannerBg 
       />
+
+      <div>
+        <h2>Um Ecossistema que beneficia criadores , fãs e investidores ao redor do mundo</h2>
+      </div>
+
       <Layout>
         <Content style={{ display: 'flex', flexWrap: 'wrap' }}>
           <Col style={{ width: '100%', marginTop: 32 }}>

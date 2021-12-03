@@ -49,8 +49,9 @@ const MetaplexMenu = () => {
   if (width < 768)
     return (
       <>
+
+        
         <Modal
-          title={<img src={ASSET_PREFIX+'/custom_layout/banner-top.jpeg'} />}
           visible={isModalVisible}
           footer={null}
           className={'modal-box'}
@@ -110,7 +111,7 @@ export const LogoLink = () => {
   let ASSET_PREFIX = process.env.ASSET_PREFIX || '';
   return (
     <Link to={`/`}>
-      <img width="200" src={ASSET_PREFIX + '/custom_layout/logo-white.png'} />  
+      <img  width="200" src={ASSET_PREFIX + '/custom_layout/logo-white.png'} />  
     </Link>
   );
 };

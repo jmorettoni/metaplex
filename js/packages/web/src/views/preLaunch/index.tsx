@@ -10,7 +10,7 @@ import { getUser, getWalletAddress, saveUser } from './userInfo';
 
 const { Content } = Layout;
 
-export interface GotEmailButtonProps
+export interface GotEmailButtonProps 
   extends ModalProps,
     React.RefAttributes<HTMLElement> {
   titleText: string;

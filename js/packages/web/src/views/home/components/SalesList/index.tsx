@@ -45,7 +45,7 @@ export const SalesListView = () => {
       />
 
       <div>
-        <h2>Um Ecossistema que beneficia criadores , fãs e investidores ao redor do mundo</h2>
+        <h2>Um Ecossistema que beneficia criadores , fãs e investidores ao redor do mundo...</h2>
       </div>
 
       <Layout>
